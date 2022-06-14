@@ -25,6 +25,12 @@
         --button-primary-border-color: var(--dracula-purple);
         --button-primary-background-color-focus: var(--dracula-pink);
         --button-primary-border-color-focus: var(--dracula-pink);
+        --button-default-background-color: var(--dracula-purple);
+        --button-default-border-color: var(--dracula-purple);
+        --button-default-color: var(--dracula-foreground);
+        --button-default-color-focus: var(--dracula-foreground);
+        --button-default-background-color-focus: var(--dracula-pink);
+        --button-default-border-color-focus: var(--dracula-pink);
         --alert-color-success: var(--dracula-background);
         --alert-background-color-success: var(--dracula-green);
         --alert-border-color-success: var(--dracula-green);
@@ -37,6 +43,10 @@
         --alert-background-color-default: var(--dracula-yellow);
         --alert-border-color-default: var(--dracula-yellow);
         --alert-color-default:var(--dracula-background);
+        --alert-color-info:var(--dracula-background);
+        --alert-background-color-info:var(--dracula-cyan);
+        --alert-border-color-info:var(--dracula-cyan);
+
     }
     
     body {
@@ -263,11 +273,18 @@
     .panel {
         background-color: var(--dracula-background);
         border: 0px;
+        color: var(--dracula-foreground);
     }
 
     .project-overview-column {
         border: 1px solid var(--dracula-currentline);
         border-radius: 5px;
+    }
+
+    .buttons-header > a .fa {
+
+        color: var(--dracula-foreground);
+
     }
 
     /*Task Details*/
@@ -528,8 +545,6 @@
         border: 1px solid var(--dracula-background);
     }
 
-
-
     .select2-container--default .select2-results > .select2-results__options {
         background-color: var(--dracula-currentline);
         border: 1px solid var(--dracula-background);
@@ -537,6 +552,13 @@
 
     .select2-container--default .select2-selection--single .select2-selection__rendered {
         color: var(--dracula-foreground);
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+
+        background-color: var(--dracula-comment);
+        border: 1px solid var(--dracula-background);
+
     }
     
 }
