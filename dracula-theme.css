@@ -12,7 +12,7 @@
         --dracula-purple:#bd93f9;
         --dracula-red:#ff5555;
         --dracula-yellow:#f1fa8c;
-        
+       
         --color-primary: var(--dracula-purple);
         --color-light: var(--dracula-comment);
         --link-color-primary: var(--dracula-purple);
@@ -368,16 +368,56 @@
     /*Board Page*/
 
     .task-board {
-        color: var(--dracula-background);
+        color: var(--dracula-foreground);
         padding: 5px 10px;
     }
+
+    .task-board-title > a {
+        color: var(--dracula-foreground) !important;
+    }
+
+    .task-board a {
+        color: var(--dracula-foreground);
+    }
     
+    td a.dropdown-menu strong {
+        color: var(--dracula-foreground);
+    }
+
+    td a.dropdown-menu:hover strong {
+        color: var(--dracula-foreground);
+    }
+
+    td a.dropdown-menu strong i {
+        color: var(--dracula-foreground);
+    }
+
+    td a.dropdown-menu:hover strong i {
+        color: var(--dracula-foreground);
+    }
+
+    .task-board-category a {
+        color: var(--dracula-background);
+    }
+
+    .task-date {
+        color: var(--dracula-foreground);
+    }
+
     .task-tags li {
         color: var(--dracula-background);
     }
     
     .task-board-header a .fa {
-        color: var(--dracula-background);
+        color: var(--dracula-foreground);
+    }
+
+    .task-board-icons a {
+        opacity: 0.75;
+    }
+
+    .task-board-icons span {
+        opacity: 0.75;
     }
 
     .board-add-icon i:focus, .board-add-icon i:hover {
@@ -479,12 +519,9 @@
 
 /*Individual Task Page*/
 
-    .task-summary-column {
-        color: var(--dracula-background);
-    }
     
     .task-summary-column span {
-        color: var(--dracula-background);
+        color: var(--dracula-foreground);
     }
     
     #task-summary h2 {
@@ -559,6 +596,28 @@
         background-color: var(--dracula-comment);
         border: 1px solid var(--dracula-background);
 
+    }
+
+    /*Card Colours*/
+
+    .task-board.color-yellow, .task-summary-container.color-yellow,
+    .task-board.color-blue, .task-summary-container.color-blue,
+    .task-board.color-green, .task-summary-container.color-green,
+    .task-board.color-purple, .task-summary-container.color-purple,
+    .task-board.color-red, .task-summary-container.color-red,
+    .task-board.color-orange, .task-summary-container.color-orange,
+    .task-board.color-brown, .task-summary-container.color-brown,
+    .task-board.color-deep_orange, .task-summary-container.color-deep_orange,
+    .task-board.color-grey, .task-summary-container.color-grey,
+    .task-board.color-dark_grey, .task-summary-container.color-dark_grey,
+    .task-board.color-pink, .task-summary-container.color-pink,
+    .task-board.color-teal, .task-summary-container.color-teal,
+    .task-board.color-cyan, .task-summary-container.color-cyan,
+    .task-board.color-lime, .task-summary-container.color-lime,
+    .task-board.color-light_green, .task-summary-container.color-light_green,
+    .task-board.color-amber, .task-summary-container.color-amber {
+        background-color: rgba(68, 71, 90, 0.5);
+        border-width: 2px;
     }
     
 }
